@@ -1,5 +1,5 @@
 <template>
-  <Tutorial />
+    <h1>株式会社タイセイ</h1>
 </template>
 
 <script>

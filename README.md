@@ -1,2 +1,13 @@
-# taisei
- 株式会社タイセイのHP作成
+#Requirements
+
+- Git
+- Docker
+- docker-compose
+
+  #Usage
+
+```
+docker compose up -d
+docker-compose exec app /bin/sh
+/src # yarn run dev
+```
