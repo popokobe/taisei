@@ -1,10 +1,10 @@
-#Requirements
+# Requirements
 
 - Git
 - Docker
 - docker-compose
 
-  #Usage
+# Usage
 
 ```
 docker compose up -d
