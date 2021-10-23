@@ -17,13 +17,13 @@ export default {
       { hid: 'description', name: 'description', content: '株式会社タイセイのHP' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    { src: '~/assets/common.scss' },
-  ],
+  css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -39,7 +39,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxtjs/style-resources',
+    '@nuxtjs/style-resources'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -67,6 +67,11 @@ export default {
   },
 
   styleResources: {
-    scss: ['~/assets/_variable.scss'],
-},
+    scss: [
+      '~/assets/destyle.css',
+      '~/assets/_variable.scss',
+      '~/assets/_mixin.scss',
+      '~/assets/common.scss',
+    ],
+  }
 }

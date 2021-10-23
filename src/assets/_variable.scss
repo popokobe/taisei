@@ -1,13 +1,15 @@
-// // メディアクエリ
-// $pc: 'only screen and (min-width:769px) ';
-// $sp: 'only screen and (max-width:769px) ';
+// メディアクエリ
+$breakpoints: (
+    'sp': (max-width: 1079px),
+    'pc': (min-width: 1080px)
+) !default;
 
-// // 使用するカラー
-// $colorDarkPink: #ff6666;
+// 使用するカラー
+$clr-main: #11439D;
+$clr-accent: #FB8500;
 
-// // @include flex(center, center);
-// @mixin flex($justify-content: unset, $align-items: unset) {
-//   display: flex;
-//   justify-content: $justify-content;
-//   align-items: $align-items;
-// }
+$text-clr-main: #000000;
+
+$bg-clr-main: #F7F7F7;
+$bg-clr-sub: #fff;
+
