@@ -1,0 +1,35 @@
+html {
+    // ベースのfont-size: 10px;に設定 (1em = 10px)
+    font-size: 62.5%; 
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 2.0rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+a,
+span,
+p {
+    font-size: 1.2rem;
+
+    @include mq(pc) {
+        font-size: 1.6rem;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

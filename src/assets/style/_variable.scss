@@ -1,0 +1,32 @@
+// メディアクエリ
+$breakpoints: (
+    'tab': (min-width: 600px),
+    'pc': (min-width: 1080px)
+) !default;
+
+// 使用するカラー
+$clr-main: #11439D;
+$clr-accent: #FB8500;
+
+$text-clr-main: #000000;
+
+$bg-clr-main: #F7F7F7;
+$bg-clr-sub: #fff;
+
+$border-clr-main: #767676;
+
+// letter-spacing
+$ls-sm: 0.025em;
+$ls-md: 0.06em;
+$ls-lg: 0.1em;
+$ls-xl: 0.15em;
+ 
+// line-height
+$lh-100: 1;
+$lh-125: 1.25;
+$lh-150: 1.5;
+$lh-200: 2;
+
+// アニメーション用
+$trans-in: ease all 0.2s;
+$trans-out: ease all 0.4s;
