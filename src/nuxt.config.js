@@ -23,7 +23,10 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: [
+    '~/assets/style/destyle.css',
+    '~/assets/style/common.scss',
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -35,7 +38,15 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    'nuxt-font-loader'
   ],
+
+  fontLoader: {
+    url: 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap',
+
+    prefetch: true,
+    preconnect: true
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -68,10 +79,8 @@ export default {
 
   styleResources: {
     scss: [
-      '~/assets/destyle.css',
-      '~/assets/_variable.scss',
-      '~/assets/_mixin.scss',
-      '~/assets/common.scss',
+      '~/assets/style/_variable.scss',
+      '~/assets/style/_mixin.scss',
     ],
   }
 }

@@ -1,8 +1,8 @@
 <template>
     <div class="logo">
         <a href="/">
-            <span>株式会社タイセイ</span>
-            <span>TAISEI GROUP</span>
+            <span class="sub">株式会社タイセイ</span>
+            <span class="main">TAISEI GROUP</span>
         </a>
     </div>
 </template>
@@ -14,6 +14,16 @@
 
     span {
         display: block;
+        letter-spacing: $ls-md;
+        line-height: $lh-125;
+
+        &.sub {
+            font-size: 12px;
+        }
+
+        &.main {
+            font-size: 24px;
+        }
     }
 }
 
