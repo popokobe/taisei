@@ -1,7 +1,7 @@
 import Sass from 'sass'
 import Fiber from 'fibers'
 
-const environment = process.env.NODE_ENV || "development";
+const environment = process.env.NODE_ENV || "production";
 const envSet = require(`./env.${environment}.js`);
 
 export default {
