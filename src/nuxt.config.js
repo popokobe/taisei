@@ -1,7 +1,12 @@
 import Sass from 'sass'
 import Fiber from 'fibers'
 
+const environment = process.env.NODE_ENV || "development";
+const envSet = require(`./env.${environment}.js`);
+
 export default {
+  env: envSet,
+
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
@@ -29,7 +34,7 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: ['~/plugins/contentful.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
