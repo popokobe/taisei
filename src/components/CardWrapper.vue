@@ -20,7 +20,7 @@ export default {
         gap: 20px;
 
         @include mq(tab) {
-            grid-template-columns: repeat(2, minmax(300px, 1fr));
+            grid-template-columns: repeat(2, minmax(200px, 1fr));
         }
     }
 </style>

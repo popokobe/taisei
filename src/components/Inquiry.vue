@@ -59,10 +59,10 @@
             .email {
                 --border-style: 2px solid #fff;
                 
-                border-bottom: var(--border-style);
+                margin-bottom: 60px;
                 
                 @include mq(pc) {
-                    border-bottom: none;
+                    margin-bottom: 0;
                     border-right: var(--border-style);
                 }
                 

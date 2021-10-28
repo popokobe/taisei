@@ -10,7 +10,7 @@
                             都住創山吹町ビル9階</p>
                     </div>
                 </div>
-                <div>
+                <div class="link">
                     <ul class="link-wrapper">
                         <li><a href="">HOME</a></li>
                         <li><a href="">賃貸物件一覧</a></li>
@@ -43,7 +43,11 @@
         letter-spacing: $ls-lg;
 
         .content-wrapper {
-            padding: 60px 0 10px;
+            padding: 25px 0 10px;
+            
+            @include mq(pc) {
+                padding-top: 60px;
+            }
 
             .grid-wrapper {
                 display: grid;
@@ -56,25 +60,38 @@
 
                 .address {
                     font-weight: 500;
-                    margin-top: 40px;
+                    margin: 20px 0;
                     line-height: $lh-150;
+
+                    @include mq(pc) {
+                        margin: 0;
+                        margin-top: 40px;
+                    }
 
                     .zip-code {
                         display: block;
                     }
                 }
 
-                ul.link-wrapper {
-                    font-size: 14px;
-                    font-weight: 500;
+                .link {
+                    margin-bottom: 30px;
 
-                    &+hr {
-                        width: 100px;
-                        margin: 20px 0;
+                    @include mq(pc) {
+                        margin-bottom: 0;
                     }
+                    
+                    ul.link-wrapper {
+                        font-size: 14px;
+                        font-weight: 500;
 
-                    li {
-                        line-height: $lh-200;
+                        &+hr {
+                            width: 100px;
+                            margin: 20px 0;
+                        }
+
+                        li {
+                            line-height: $lh-200;
+                        }
                     }
                 }
 

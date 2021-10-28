@@ -24,7 +24,7 @@ span,
 p {
     font-size: 1.2rem;
 
-    @include mq(pc) {
+    @include mq(tab) {
         font-size: 1.6rem;
     }
 }
