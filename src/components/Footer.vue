@@ -111,7 +111,8 @@
             }
 
             .copyright {
-                margin-top: 80px;
+                font-size: 10px;
+                margin-top: 40px;
                 text-align: center;
 
                 @include mq(pc) {

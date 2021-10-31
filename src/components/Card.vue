@@ -44,23 +44,45 @@
                 margin-bottom: 20px;
             }
 
+            .name,
+            .location {
+                font-size: 1.2rem;
+                
+                @include mq(pc) {
+                    font-size: 1.6rem;
+                }
+            }
+
             .name {
                 display: inline-block;
                 color: $clr-accent;
                 border: solid 2px $clr-accent;
-                padding: 6px 12px;
+                padding: 3px 6px;
+
+                @include mq(pc) {
+                    padding: 6px 12px;
+                }
             }
 
             .desc {
                 line-height: $lh-200;
+                font-size: 15px;
+
+                @include mq(pc) {
+                    font-size: 2rem;
+                }
             }
 
             .location {
-                --icon-size: 27px;
+                --icon-size: 21px;
 
                 color: $clr-accent;
                 position: relative;
                 padding-left: calc(var(--icon-size) + 6px);
+
+                @include mq(pc) {
+                    --icon-size: 27px;
+                }
 
                 &::before {
                     position: absolute;
@@ -76,10 +98,14 @@
             }
 
             .rent {
-                font-size: 24px;
+                font-size: 2rem;
                 color: $clr-main;
                 font-weight: bold;
                 margin-top: 20px;
+
+                @include mq(pc) {
+                    font-size: 2.4rem;
+                }
             }
         }
     }
