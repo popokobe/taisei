@@ -76,7 +76,7 @@
                     content: '';
                     display: block;
                     width: 24px;
-                    height: 2px;
+                    height: 1.5px;
                     background: $clr-main;
                     transition: $trans-in;
                 }
