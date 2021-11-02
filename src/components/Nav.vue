@@ -4,7 +4,7 @@
             <span v-for="i in 3" :key="i.id" class="line" :class="'line-' + i">
             </span>
         </div>
-        <ul :class="{ open : toggleMenu }">
+        <ul class="menu" :class="{ open : toggleMenu }">
             <li v-for="link in links" :key=link.id :class="[link.name === 'お問い合わせ' ? 'inquiry' : '']">
                 <!-- "お問い合わせ"じゃない場合 -->
                 <a v-if="link.name !== 'お問い合わせ'" :href="link.href">{{ link.name }}</a>
@@ -17,6 +17,10 @@
             </li>
             <li v-if="toggleMenu">
                 <InquiryButton />
+            </li>
+            <li class="sns-wrapper" v-if="toggleMenu">
+                <span>各種SNS：</span>
+                <SnsWrapper :sns="['instagram', 'tiktok']" />
             </li>
         </ul>
     </div>
@@ -112,7 +116,7 @@
             }
         }
 
-        ul {
+        ul.menu {
             z-index: -1;
             overflow-x: hidden;
             transition: $trans-in;
@@ -192,6 +196,11 @@
                         font-size: 16px;
                     }
                 }
+            }
+
+            li.sns-wrapper {
+                display: flex;
+                align-items: center;
             }
         }
     }
