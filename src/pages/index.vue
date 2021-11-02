@@ -180,6 +180,7 @@
         }
 
         @include mq(pc) {
+            background: url("~/assets/img/kv-pc.jpg") no-repeat;
             margin: auto;
             padding: 0;
             width: auto;
