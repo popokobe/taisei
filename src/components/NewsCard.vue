@@ -29,9 +29,14 @@ export default {
     background: $bg-clr-sub;
     border-radius: 3%;
     font-weight: 500;
+    transition: $trans-in;
 
     @include mq(pc){
         width: clamp(250px, 40%, 350px);
+    }
+
+    &:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
 
     &:not(:last-child) {

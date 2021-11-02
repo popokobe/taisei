@@ -26,7 +26,6 @@
                 </ul>
             </div>
         </ContentWrapper>
-
         <HeroWrapper :objects="heros" />
     </div>
 </template>
@@ -272,22 +271,23 @@
                 position: relative;
 
                 &::after {
+                    transition: $trans-in;
                     content: '';
                     display: inline-block;
                     position: absolute;
                     transform: translateX(-50%);
                     left: 50%;
-                    bottom: -5px;
+                    bottom: -10px;
                     width: 45px;
                     height: 2px;
                     background-color: $clr-main;
                 }
 
-                // &:hover {
-                //     &::after {
-                //         bottom: -10px;
-                //     }
-                // }
+                &:hover {
+                    &::after {
+                        bottom: -7px;
+                    }
+                }
             }
         }
 
