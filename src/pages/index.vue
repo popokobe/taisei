@@ -2,11 +2,13 @@
     <div>
         <ContentWrapper>
             <div class="kv">
-                <h1>Change your life from home.</h1>
                 <div class="box">
-                    <h2>暮らしを、家から</h2>
-                    <p>私たちは都内での暮らしを豊かにします。私たちは都内での暮らしを豊かにします。<br>
-                        入居者、随時募集中！</p>
+                    <h1>TAISEISM</h1>
+                    <h2>De-Domain</h2>
+                    <p>
+                        TAISEISM ともいうべき企業理念 「De-Domain」 (脱領域)には、いわれなき規制・指導 慣例な ど既存の領域から脱皮することで、 より
+                        「公正」「正常」な社会の実現という意味がこめられています｡
+                    </p>
                 </div>
             </div>
             <div class="apartments">
@@ -193,20 +195,20 @@
         }
 
         h1 {
-            display: none;
+            font-style: italic;
+            font-weight: 200;
+            font-size: 40px;
+            letter-spacing: $ls-lg;
 
             @include mq(pc) {
-                display: block;
-                font-size: 40px;
-                letter-spacing: $ls-lg;
-                margin-bottom: 40px;
-                z-index: 1;
+                margin-bottom: 10px;
             }
         }
 
         .box {
             width: clamp(250px, 70vw, 480px);
             margin-right: 10px;
+            margin-bottom: 10px;
             z-index: 1;
             grid-column: 2 / 3;
             grid-row: 2 / 3;
@@ -215,6 +217,7 @@
             line-height: $lh-200;
 
             @include mq(pc) {
+                margin-bottom: 0;
                 width: clamp(300px, 70vw, 480px);
                 grid-column: 1 / 2;
                 grid-row: 2 / 3;
