@@ -1,6 +1,6 @@
 <template>
     <p class="tel" :class="{ reversed: reversed }">
-        <span class="icon"></span>03-1234-5678
+        <span class="icon"></span>03-6265-3710
     </p>
 </template>
 

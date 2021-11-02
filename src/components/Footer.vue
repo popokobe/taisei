@@ -24,7 +24,7 @@
                 </div>
                 <div>
                     <Tel />
-                    <p class="day-off"><span>定休日 /</span> 毎週火曜日・土日祝日</p>
+                    <p class="day-off"><span>定休日 /</span> 土日祝</p>
                     <p class="opening-hours"><span>営業時間 /</span> 9:00 ~ 18:00</p>
                     <InquiryButton />
                     <div class="sns-wrapper">
