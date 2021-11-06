@@ -16,7 +16,9 @@
             </div>
         </ContentWrapper>
         <Inquiry />
-        <ContentWrapper>
+        
+        <!-- 遷移先のページができ次第コメントアウトを解除してください -->
+        <!-- <ContentWrapper>
             <div class="news">
                 <div class="box">
                     <Heading :title="{ main: '新着情報', sub: 'NEWS' }" />
@@ -27,8 +29,8 @@
                     <NewsCard v-for="item in newsItems" :key="item.id" :item="item" />
                 </ul>
             </div>
-        </ContentWrapper>
-        <HeroWrapper :objects="heros" />
+        </ContentWrapper> -->
+        <!-- <HeroWrapper :objects="heros" /> -->
     </div>
 </template>
 
@@ -41,30 +43,30 @@
                     {
                         name: 'UVAS経堂',
                         src: require('~/assets/img/uvas-kyodo.jpg'),
-                        desc: '渋谷・新宿へ出やすいメゾネットアパート',
-                        location: '世田谷区 経堂',
-                        rent: '70,000'
+                        desc: '都会のオアシス 新宿まで急行で3駅',
+                        location: '小田急線「経堂」駅より徒歩10分',
+                        rent: '73,000'
                     },
                     {
                         name: 'UVAS三軒茶屋',
-                        src: require('~/assets/img/uvas-kyodo.jpg'),
-                        desc: '渋谷まで電車で〇〇分の学生用アパート',
-                        location: '世田谷区 三軒茶屋',
-                        rent: '70,000'
+                        src: require('~/assets/img/uvas-sancha.jpg'),
+                        desc: '人気の街 三軒茶屋駅より徒歩5分の好立地',
+                        location: '田園都市線「三軒茶屋」駅より徒歩5分',
+                        rent: '86,000'
                     },
                     {
                         name: 'UVAS西馬込',
-                        src: require('~/assets/img/uvas-kyodo.jpg'),
-                        desc: '横浜まで電車で〇〇分の好アクセス',
-                        location: '大田区 南馬込',
-                        rent: '70,000'
+                        src: require('~/assets/img/uvas-nishimagome.jpg'),
+                        desc: '路線の始発駅なので座って通勤したい方に人気',
+                        location: '都営浅草線「西馬込」駅より徒歩9分',
+                        rent: '76,000'
                     },
                     {
                         name: '大井町AP',
-                        src: require('~/assets/img/uvas-kyodo.jpg'),
-                        desc: '品川駅までわずか2駅の社会人向けアパート',
-                        location: '品川区 東大井',
-                        rent: '90,000'
+                        src: require('~/assets/img/oimachi-ap.jpg'),
+                        desc: '品川駅まで3分',
+                        location: 'JR京浜東北線「大井町」駅より徒歩10分',
+                        rent: '116,000'
                     },
                 ],
                 newsItems: [

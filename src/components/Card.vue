@@ -3,7 +3,7 @@
         <a href="/">
             <img class="img" :src="object.src" :alt="object.name">
             <p class="name">{{ object.name }}</p>
-            <h2 class="desc">{{ object.desc }}</h2>
+            <h2 class="desc" v-html="object.desc"></h2>
             <p class="location">{{ object.location }}</p>
             <p class="rent">{{ object.rent }}円〜 / 月</p>
         </a>
