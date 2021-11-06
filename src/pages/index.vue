@@ -4,9 +4,9 @@
             <div class="kv">
                 <div class="box">
                     <h1>TAISEISM</h1>
-                    <h2>De-Domain</h2>
+                    <!-- <h2>De-Domain</h2> -->
                     <p>
-                        TAISEISM ともいうべき企業理念 「De-Domain」 (脱領域)には、いわれなき規制・指導 慣例など既存の領域から脱皮することで、 より
+                        TAISEISM ともいうべき企業理念 <span class="bold">「De-Domain」(脱領域)</span>には、いわれなき規制・指導 慣例など既存の領域から脱皮することで、 より
                         「公正」「正常」な社会の実現という意味がこめられています｡
                     </p>
                 </div>
@@ -139,7 +139,7 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         height: clamp(200px, 90vh, 600px);
-        background: url("~/assets/img/kv.jpg") no-repeat;
+        background: url("~/assets/img/kv.png") no-repeat;
         background-size: cover;
         color: $bg-clr-sub;
         overflow: hidden;
@@ -184,13 +184,13 @@
         }
 
         @include mq(pc) {
-            background: url("~/assets/img/kv-pc.jpg") no-repeat;
+            background: url("~/assets/img/kv-pc.png") no-repeat;
             margin: auto;
             padding: 0;
             width: auto;
             grid-template-columns: none;
             grid-template-rows: none;
-            background-position: top 50% right 0;
+            background-position: top 60% right 0;
             background-size: 700px;
             overflow: visible;
             align-content: center;
@@ -198,7 +198,7 @@
 
         h1 {
             font-style: italic;
-            font-weight: 200;
+            font-weight: 300;
             font-size: 40px;
             letter-spacing: $ls-lg;
 
@@ -236,6 +236,10 @@
 
             p {
                 font-size: 14px;
+            }
+
+            .bold {
+                font-weight: 500;
             }
         }
     }
