@@ -3,7 +3,6 @@
         <Header />
         <main>
             <Nuxt />
-            <Inquiry />
         </main>
         <Footer />
     </div>
