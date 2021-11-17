@@ -75,10 +75,15 @@ export default {
                 line-height: $lh-150;
             }
 
+            .email,
+            .tel {
+                padding: 25px 0;
+            }
+
             .email {
                 --border-style: 2px solid #fff;
                 
-                margin-bottom: 60px;
+                margin-bottom: 40px;
                 
                 @include mq(pc) {
                     margin-bottom: 0;
@@ -96,7 +101,7 @@ export default {
             }
             
             // 親要素から子要素のcssを変更するときは"::v-deep"をつける
-            ::v-deep .tel {
+            ::v-deep .tel-number {
                 justify-content: center;
                 font-size: 32px;
                 margin: 25px 0;

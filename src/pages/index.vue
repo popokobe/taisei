@@ -29,14 +29,13 @@
                     <NewsCard v-for="item in newsItems" :key="item.id" :item="item" />
                 </ul>
             </div>
-        </ContentWrapper> -->
-        <!-- <HeroWrapper :objects="heros" /> -->
+        </ContentWrapper>
+        <HeroWrapper :objects="heros" /> -->
     </div>
 </template>
 
 <script>
     export default {
-        layout: 'top',
         data() {
             return {
                 apartments: [

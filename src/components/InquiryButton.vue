@@ -1,5 +1,5 @@
 <template>
-    <div class="btn-inquiry" :class="{ reversed: reversed }">
+    <div class="btn-inquiry" :class="{ 'color-reversed': colorReversed }">
         <a href="/inquiry">
             <span class="icon"></span>
             <span>
@@ -12,7 +12,7 @@
 <script>
     export default {
         props: {
-            reversed: Boolean
+            colorReversed: Boolean
         }
     }
 </script>
@@ -26,7 +26,7 @@
         display: inline-block;
         padding: 14px 10px;
 
-        &.reversed {
+        &.color-reversed {
             background-color: $bg-clr-sub;
             color: $clr-main;
 

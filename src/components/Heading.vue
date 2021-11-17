@@ -1,5 +1,5 @@
 <template>
-    <div class="title">
+    <div class="title" :class="{ 'color-reversed' : colorReversed }">
         <span>{{ title.sub }}</span>
         <h2>{{ title.main }}</h2>
     </div>
@@ -8,13 +8,15 @@
 <script>
 export default {
     props: {
-        title: Object
+        title: Object,
+        colorReversed: Boolean
     }
 }
 </script>
 
 <style lang="scss" scoped>
 .title {
+    width: clamp(250px ,70vw ,480px );
     text-align: left;
     font-weight: 500;
     letter-spacing: $ls-lg;
@@ -25,8 +27,8 @@ export default {
         position: absolute;
         display: block;
         background: rgba($clr-main, 0.4);
-        top: -20%;
-        left: -2%;
+        top: -8px;
+        left: -12px;
         --diameter: 40px;
         width: var(--diameter);
         height: var(--diameter);
@@ -34,6 +36,8 @@ export default {
 
         @include mq(tab) {
             --diameter: 50px;
+            top: -14px;
+            left: -17px;
         }
     }
 
@@ -46,6 +50,18 @@ export default {
 
         @include mq(tab) {
             font-size: 3.2rem;
+        }
+    }
+
+    &.color-reversed {
+        &::before {
+            background: rgba($bg-clr-sub, 0.4);
+        }
+
+        span,
+        h2
+         {
+            color: $bg-clr-sub;
         }
     }
 }

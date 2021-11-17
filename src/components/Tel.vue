@@ -1,5 +1,5 @@
 <template>
-    <p class="tel" :class="{ reversed: reversed }">
+    <p class="tel-number" :class="{ 'color-reversed': colorReversed }">
         <span class="icon"></span>03-6265-3710
     </p>
 </template>
@@ -7,13 +7,13 @@
 <script>
 export default {
     props: {
-        reversed: Boolean
+        colorReversed: Boolean
     }
 }
 </script>
 
 <style lang="scss" scoped>
-    .tel {
+    .tel-number {
         display: flex;
         align-items: center;
 
@@ -32,7 +32,7 @@ export default {
             margin-right: 6px;
         }
 
-        &.reversed {
+        &.color-reversed {
             color: $bg-clr-sub;
 
             span {
