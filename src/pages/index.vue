@@ -3,10 +3,10 @@
         <ContentWrapper>
             <div class="kv">
                 <div class="box">
-                    <h1>TAISEISM</h1>
+                    <h1>POPOISM</h1>
                     <!-- <h2>De-Domain</h2> -->
                     <p>
-                        TAISEISM ともいうべき企業理念 <span class="bold">「De-Domain」(脱領域)</span>には、いわれなき規制・指導 慣例など既存の領域から脱皮することで、 より
+                        POPOISM ともいうべき企業理念 <span class="bold">「De-Domain」(脱領域)</span>には、いわれなき規制・指導 慣例など既存の領域から脱皮することで、 より
                         「公正」「正常」な社会の実現という意味がこめられています｡
                     </p>
                 </div>
@@ -17,8 +17,7 @@
         </ContentWrapper>
         <Inquiry />
         
-        <!-- 遷移先のページができ次第コメントアウトを解除してください -->
-        <!-- <ContentWrapper>
+        <ContentWrapper>
             <div class="news">
                 <div class="box">
                     <Heading :title="{ main: '新着情報', sub: 'NEWS' }" />
@@ -30,7 +29,7 @@
                 </ul>
             </div>
         </ContentWrapper>
-        <HeroWrapper :objects="heros" /> -->
+        <HeroWrapper :objects="heros" />
     </div>
 </template>
 

@@ -6,8 +6,8 @@
                     <Logo />
                     <div class="address">
                         <span class="zip-code">〒 160-0801</span>
-                        <p>東京都新宿区山吹町337-5<br>
-                            都住創山吹町ビル5階</p>
+                        <p>東京都新宿区山吹町100-5<br>
+                            田中ビル9階</p>
                     </div>
                 </div>
                 <div class="link">

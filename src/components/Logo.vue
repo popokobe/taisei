@@ -3,8 +3,8 @@
         <a href="/">
             <img src="~/assets/img/logo.jpg">
             <div class="text">
-                <span class="sub">株式会社タイセイ</span>
-                <span class="main">TAISEI GROUP</span>
+                <span class="sub">株式会社ポポ</span>
+                <span class="main">POPO GROUP</span>
             </div>
         </a>
     </div>

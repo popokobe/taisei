@@ -1,7 +1,7 @@
 <template>
     <li>
-        <a v-if="icon == 'instagram'" class="instagram" target="_blank" href="https://www.instagram.com/taisei.1996131/"></a>
-        <a v-if="icon == 'tiktok'" class="tiktok" target="_blank" href="https://www.tiktok.com/@taisei1996131?"></a>
+        <a v-if="icon == 'instagram'" class="instagram" target="_blank" href="https://www.instagram.com/"></a>
+        <a v-if="icon == 'tiktok'" class="tiktok" target="_blank" href="https://www.tiktok.com/"></a>
     </li>
 </template>
 

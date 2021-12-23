@@ -1,6 +1,6 @@
 <template>
     <div class="menu-wrapper">
-        <div class="hamburger-btn" @click="toggleMenu=!toggleMenu" :class="{ toggled : toggleMenu }">
+        <div class="hamburger-btn" :class="{ toggled : toggleMenu }" @click="toggleMenu=!toggleMenu">
             <span v-for="i in 3" :key="i.id" class="line" :class="'line-' + i">
             </span>
         </div>
@@ -18,7 +18,7 @@
             <li v-if="toggleMenu">
                 <InquiryButton />
             </li>
-            <li class="sns-wrapper" v-if="toggleMenu">
+            <li v-if="toggleMenu" class="sns-wrapper">
                 <span>各種SNS：</span>
                 <SnsWrapper :sns="['instagram', 'tiktok']" />
             </li>
