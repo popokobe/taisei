@@ -33,7 +33,7 @@
                     </div>
                 </div>
             </div>
-            <p class="copyright">copyright © 株式会社タイセイ All Rights Reserved.</p>
+            <p class="copyright">copyright © 株式会社ポポ All Rights Reserved.</p>
         </ContentWrapper>
     </footer>
 </template>
